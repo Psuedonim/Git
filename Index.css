@@ -1,0 +1,497 @@
+
+:root {
+
+--main-background-color: white;
+--main-trim-color: #0068b5;
+--main-text-color: #darkgrey;
+--main-trim-text-color: white;
+
+--roadDesign-color-one: blue;
+--roadDesign-color-two: blue;
+
+--general-color-one: red;
+--general-color-two: red;
+
+--cadd-color-one: green;
+--cadd-color-two: green;
+
+--calc-color-one: yellow;
+--calc-color-two: yellow;
+
+--tutorials-color-one: orange;
+--tutorials-color-two: orange;
+
+--quality-color-one: purple;
+--quality-color-two: purple;
+
+--drainage-color-one: pink;
+--drainage-color-two: pink;
+
+--contracts-color-one: magenta;
+--contracts-color-two: magenta;
+
+--hr-color-one: cyan;
+--hr-color-two: cyan;
+
+--vehicle-color-one: brown;
+--vehicle-color-two: brown;
+
+--western-color-one: grey;
+--western-color-two: grey;
+
+--utilities-color-one: navy;
+--utilities-color-two: navy;
+
+--soloListItem-color-one: hotpink;
+--soloListItem-color-two: hotpink;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: var(--main-background-color);
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+ul{
+  list-style-type: none;
+  width: 31.5%;
+  height: 690px;
+  overflow: hidden;
+
+}
+li {
+  /* background-color: yellow; */
+  /* opacity: 50%; */
+  margin: 10px;
+  font-size: 20px;
+}
+
+
+/* Load Screen */
+.loadScreen{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-trim-color);
+}
+.loadLogo{
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    height: 140px;
+    width: 129px;
+    background-image: url("./Main Page Images/TfNSW Logo.png");
+}
+
+/* Menu Pages */
+.menuBody{
+  background-color: var(--main-background-color);
+  top:
+}
+
+.menuTitle{
+  color: var(--main-trim-text-color);
+  position: absolute;
+  text-align: center;
+  display: inline;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  background-color: var(--main-trim-color);
+  padding-top: 25px;
+
+}
+.list{
+  display: inline-block;
+}
+.soloList{
+  top: 12%;
+  position: absolute;
+  width: 30%;
+  left: 34%;
+  height: 100%;
+}
+.listContainer{
+  position: absolute;
+  margin-top: 5%;
+}
+.listItem:hover{
+  color: var(--main-trim-text-color);
+  font-weight: bolder;
+  animation: highlight 1s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.listItem{
+  color: var(--main-text-color);
+  border-radius: 10px;
+}
+.listHeading{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-weight: bolder;
+  color: var(--main-text-color);
+}
+
+/* Home Page */
+.topRunner{
+  background-color: #222;
+  top: 0%;
+  left: 0%;
+  height: 1%;
+  width: 100%;
+  z-index: 1000;
+}
+.pageTitle {
+  background-color: var(--main-trim-color);
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 130px;
+  top: 0;
+  left: 0;
+  z-index: 4;
+
+}
+.pageHeading{
+  position: absolute;
+  left: 42.5%;
+  padding-top: 35px;
+  width: 15%;
+  height: 10%;
+  color: var(--main-trim-text-color);
+  font-weight: bolder;
+  font-size: 40px;
+}
+.headerBar{
+  position: fixed;
+  width: 100%;
+  background-color: var(--main-trim-color);
+  height: 14%;
+  top: 0;
+  left: 0;
+
+}
+.pageImages{
+  top: 0;
+  left: 0;
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  z-index: 10;
+  max-width: 130px;
+  max-height: 130px;
+  animation: pageImages 10s forwards infinite;
+  object-fit: cover;
+}
+.elementContainer{
+  grid-gap: 10px;
+  position: absolute;
+  top: 130px;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-color: var(--main-background-color);
+
+}
+.pageElement{
+  position: relative;
+  display: inline-block;
+  height: 15%;
+  width: 49.5%;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  /* border-radius: 20px; */
+}
+.pageElement:hover{
+  opacity: 90%;
+  animation: highlight .5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  border: 2px solid gray;
+  box-shadow: 5px 5px gray;
+}
+.pageElement:hover .pageElementTitle{
+  color: var(--main-trim-text-color);
+}
+.pageElementUnderline{
+  position: absolute;
+  background-color: var(--main-trim-color);
+  top:0;
+  width: 100%;
+  height: 25%;
+}
+.pageElementTitle{
+  color: var(--main-text-color);
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+}
+.pageElementImage{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  z-index: 30;
+}
+.subElementContainer{
+  position: absolute;
+  top: 110px;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 10px;
+}
+.sideBarLeft{
+  position: fixed;
+  left:0;
+  top:0%;
+  background-color: var(--main-background-color);
+  height: 100%;
+  z-index: 5;
+  width: 1%;
+}
+.sideBarRight{
+  position: fixed;
+  right:0;
+  top:0%;
+  background-color: var(--main-background-color);
+  height: 100%;
+  z-index: 5;
+  width: 1%;
+}
+.runner {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 125px;
+  animation: pageImages 10s forwards infinite;
+  z-index: 50;
+
+}
+.runnerBackground{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  animation: shadowRotation 1s forwards infinite;
+  border-radius: 50%;
+  background-color: gray;
+  background-blend-mode: soft-light;
+}
+.runner:hover{
+  background-color: var(--main-background-color);
+}
+.runnerText {
+    position: absolute;
+    top: 31%;
+    left: 15%;
+    height: 50%;
+    text-align:center;
+    font-weight: bolder;
+    width: 50%;
+    font-size: 25px;
+}
+
+#roadDesign{
+  /* background-color: var(--roadDesign-color-one); */
+}
+#general{
+  /* background-color: var(--general-color-one); */
+}
+#cadd{
+  /* background-color: var(--cadd-color-one); */
+}
+#calc{
+  /* background-color: var(--calc-color-one); */
+}
+#tutorials{
+  /* background-color: var(--tutorials-color-one); */
+}
+#quality{
+  /* background-color: var(--quality-color-one); */
+}
+#drainage{
+  /* background-color: var(--drainage-color-one); */
+}
+#contracts{
+  /* background-color: var(--contracts-color-one); */
+}
+#hr{
+  /* background-color: var(--hr-color-one); */
+}
+#vehicle{
+  /* background-color: var(--vehicle-color-one); */
+}
+#western{
+  /* background-color: var(--western-color-one); */
+}
+#utilities{
+  /* background-color: var(--utilities-color-one); */
+}
+#soloListItem{
+  /* background-color: var(--soloListItem-color-one); */
+  text-align: center;
+}
+#old{
+  background-color: red;
+}
+
+@keyframes gradientShift{
+  0%{
+    background: linear-gradient(30deg, var(--guides-color-one) 0%, var(--guides-color-two) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+
+  25%{
+    background: linear-gradient(30deg, var(--guides-color-one) 0%, var(--guides-color-two) 75%, rgba(0, 212, 255, 1) 100%);
+    }
+  100%{
+      background: linear-gradient(30deg, var(--guides-color-one) 0%, var(--guides-color-two) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+
+}
+@keyframes pageElement {
+  0% {
+    /* height: 300px; */
+    /* background-position: bottom; */
+  }
+
+  3% {
+    /* height: 280px; */
+  }
+  100%{
+    /* height: 280px; */
+    background-position: top;
+  }
+}
+@keyframes pageElementHover {
+  0% {
+    /* height: 280px; */
+    background-position: top;
+  }
+
+  3% {
+    /* height: 300px; */
+  }
+  100%{
+    /* height: 300px; */
+    background-position: bottom;
+  }
+}
+@keyframes highlight{
+  0% {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+  }
+  100%{
+    background-color: var(--main-trim-color);
+    color: var(--main-trim-text-color);
+  }
+
+}
+@keyframes fadeOut {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+
+}
+@keyframes pageImages {
+    0%
+    {
+      background-image: url("Main Page Images/dwayne.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    20%
+    {
+      background-image: url("Main Page Images/dwayne2.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    40%
+    {
+      background-image: url("Main Page Images/dwayne3.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    60%
+    {
+      background-image: url("Main Page Images/dwayne4.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    80%
+    {
+      background-image: url("Main Page Images/dwayne5.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    100%
+    {
+      background-image: url("Main Page Images/dwayne.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+  }
+
+}
+@keyframes shadowRotation {
+  0%
+  {
+    width: 250px;
+    height: 250px;
+
+  }
+
+  33%
+  {
+    width: 220px;
+    height: 220px;
+
+  }
+
+  66%
+  {
+    width: 250px;
+    height: 250px;
+  }
+
+  100%
+  {
+    width: 220px;
+    height: 220px;
+  }
+
+
+  }
